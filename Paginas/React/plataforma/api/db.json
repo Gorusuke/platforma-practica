@@ -1,0 +1,26 @@
+{
+  "especialidades": [
+    {
+      "id": 1,
+      "nombre": "Especialidad en React"
+    },
+    {
+      "id": 2,
+      "nombre": "Especialidad en Javascript"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nombre": "React desde 0"
+    },
+    {
+      "id": 2,
+      "nombre": "Javascript en el navegador"
+    },
+    {
+      "id": 3,
+      "nombre": "Go desde sus inicios"
+    }
+  ]
+}
