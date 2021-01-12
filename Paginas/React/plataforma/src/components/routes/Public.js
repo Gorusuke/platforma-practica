@@ -3,7 +3,7 @@ import { Redirect, Route } from 'react-router-dom'
 
 export const Public = ({component: Component, ...props}) => {
 	
-	const usuario = false;
+	const usuario = localStorage.getItem('token');
 	
 	return (
 		<Route {...props} render={ props => usuario 

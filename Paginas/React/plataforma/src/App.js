@@ -38,7 +38,7 @@ function App() {
 				<Route component={Error404} />
 				{/* <Route exact path='/terminos' component={Terminos} /> */}
 			</Switch>
-			<Footer/>
+			{/* <Footer/> */}
 		</Router>
 	
 	) 

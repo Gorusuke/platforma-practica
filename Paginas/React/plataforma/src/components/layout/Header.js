@@ -11,6 +11,11 @@ const Header = () => {
 		menu.current.classList.toggle('show')
 	}
 
+	const cerrarSesion = () => {
+		localStorage.removeItem('token')
+		window.location = '/login'
+	}
+
 	return (
 		<header className="main-header ">
 			<div className="ed-grid s-grid-5 lg-grid-4 s-mb-4">
@@ -22,10 +27,11 @@ const Header = () => {
 				<div className="s-grid-1 lg-cols-3 s-cross-center s-main-end header-links">
 					<nav className="main-menu" ref={menu}>
 						<ul>
-							<li><NavLink to="/">Inicio</NavLink></li>
-							<li><NavLink to="/especialidades">Especialidades</NavLink></li>
-							<li><NavLink to="/cursos">Cursos</NavLink></li>
-							<li><NavLink to="/profesores">Profesores</NavLink></li>
+							<li><NavLink exact to="/"><b>Inicio</b></NavLink></li>
+							<li><NavLink to="/especialidades"><b>Especialidades</b></NavLink></li>
+							<li><NavLink to="/cursos"><b>Cursos</b></NavLink></li>
+							<li><NavLink to="/profesores"><b>Profesores</b></NavLink></li>
+							<li><Link to="/login" onClick={() => cerrarSesion()}><b>Cerrar Sesión</b></Link></li>
 						</ul>
 					</nav>
 					<div 
