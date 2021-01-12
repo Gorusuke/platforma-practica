@@ -50,9 +50,8 @@ const Login = () => {
 					<div className="form__item">
 						<input type="submit" className="button third-color full" value="Iniciar Sesión"/>
 					</div>
-					<div className="ed-container">
-						<div className="ed-item s-60 s-px-0 s-pr-1"><p className="s-right">¿No tienes una cuenta?</p></div>
-						<div className="ed-item s-40 s-px-0"><Link to={'/registro'} className="s-left">Crear cuenta</Link></div>
+					<div className="center">
+						<p>¿No tienes una cuenta de usuario? <Link to={'/registro'}>Crear cuenta</Link></p>
 					</div>
 					<div className="cancel-l-block"></div>
 				</form>

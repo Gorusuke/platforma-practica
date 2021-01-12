@@ -56,9 +56,8 @@ const Register = () => {
 					<div className="form__item">
 						<input type="submit" className="button third-color full" value="registrarse"/>
 					</div>
-					<div className="ed-container">
-						<div className="ed-item s-65 s-px-0 s-pr-1"><p className="s-right">¿Ya tienes una cuenta?</p></div>
-						<div className="ed-item s-35 s-px-0"><Link to={'/'} className="s-left">Login</Link></div>
+					<div className="center">
+						<p>¿Ya tienes una cuenta de usuario? <Link to={'/login'}>Iniciar sesión</Link></p>
 					</div>
 					<div className="cancel-l-block"></div>
 				</form>
