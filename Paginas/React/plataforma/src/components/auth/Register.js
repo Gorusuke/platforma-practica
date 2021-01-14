@@ -17,7 +17,7 @@ const Register = () => {
 		.catch((err) => console.info(err))
 	}
 
-
+	
 	return (
 		<div className="ed-grid">
 			<div className="l-block"></div>
