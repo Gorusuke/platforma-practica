@@ -3,22 +3,22 @@ import { GET_ALL_COURSES, GET_COURSE } from '../Types';
 
 
 export const getAllCourses = () => (dispatch) => {
-	axios.get(`${process.env.REACT_APP_URL_API}/cursos`)
+	axios.get(`https://raw.githubusercontent.com/betoquiroga/api-react-desde-cero/master/db.json`)
 	.then(res => {
 		return dispatch({
 			type: GET_ALL_COURSES,
-			payload: res.data
+			payload: res.data.cursos
 		})
 	})
 }
 
 
-export const getCourse = (id) => (dispatch) => {
-	axios.get(`${process.env.REACT_APP_URL_API}/cursos/${id}`)
+export const getCourse = () => (dispatch) => {
+	axios.get(`https://raw.githubusercontent.com/betoquiroga/api-react-desde-cero/master/db.json`)
 	.then(res => {
 		return dispatch({
 			type: GET_COURSE,
-			payload: res.data
+			payload: res.data.curso
 		})
 	})
 }

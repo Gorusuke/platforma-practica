@@ -21,18 +21,18 @@ const Teachers = ({match}) => {
 	const allTeachers = () => {
 		return (
 			<main className="ed-grid m-grid-3 lg-grid-4 row-gap s-mb-2">
-					{teachers.map(teacher => (
-						<article key={teacher.id}>
-							<div className="s-px-4">
-								<div className="img-container circle s-mb-2">
-									<img src={teacher.picture} alt={teacher.name}/>
-								</div>
+				{teachers.map(teacher => (
+					<article key={teacher.id}>
+						<div className="s-px-4">
+							<div className="img-container circle s-mb-2">
+								<img src={teacher.picture} alt={teacher.name}/>
 							</div>
-							<div className="s-center">
-								<p className="t3 s-mb-1">{teacher.name}</p>
-								<p className="s-mb-0">{teacher.country}</p>
-							</div>
-						</article>
+						</div>
+						<div className="s-center">
+							<p className="t3 s-mb-1">{teacher.name}</p>
+							<p className="s-mb-0">{teacher.country}</p>
+						</div>
+					</article>
 				))}
 			</main>
 		)

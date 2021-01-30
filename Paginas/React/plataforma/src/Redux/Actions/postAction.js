@@ -3,11 +3,11 @@ import { GET_ALL_POSTS, GET_POSTS } from '../Types';
 
 
 export const getAllPost = () => (dispatch) => {
-	axios.get(`${process.env.REACT_APP_URL_API}/posts`)
+	axios.get(`https://raw.githubusercontent.com/betoquiroga/api-react-desde-cero/master/db.json`)
 	.then(res => {
 		return dispatch({
 			type: GET_ALL_POSTS,
-			payload: res.data
+			payload: res.data.posts
 		})
 	})
 }

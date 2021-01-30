@@ -4,8 +4,8 @@ import { GET_ALL_SPECIALITIES, GET_SPECIALITY } from '../Types';
 
 export const getAllSpecialities = () => {
 	return async (dispatch) => {
-		const respuesta = await axios.get(`${process.env.REACT_APP_URL_API}/especialidades`);
-		const resultado = await respuesta.data
+		const respuesta = await axios.get(`https://raw.githubusercontent.com/betoquiroga/api-react-desde-cero/master/db.json`);
+		const resultado = await respuesta.data.especialidades
 		return dispatch({
 			type: GET_ALL_SPECIALITIES,
 			payload: resultado
