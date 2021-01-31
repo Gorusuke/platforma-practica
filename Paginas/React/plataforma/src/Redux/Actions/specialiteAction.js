@@ -14,12 +14,12 @@ export const getAllSpecialities = () => {
 }
 
 
-export const getSpeciality = (id) => (dispatch) => {
-	axios.get(`${process.env.REACT_APP_URL_API}/especialidades/${id}`)
+export const getSpeciality = () => (dispatch) => {
+	axios.get(`https://raw.githubusercontent.com/betoquiroga/api-react-desde-cero/master/db.json`)
 	.then(res => {
 		return dispatch({
 			type: GET_SPECIALITY,
-			payload: res.data
+			payload: res.data.especialidad
 		})
 	})
 }

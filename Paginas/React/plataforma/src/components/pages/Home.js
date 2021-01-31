@@ -32,6 +32,8 @@ const Home = () => {
 				alt: "Banner Home"
 			}}
 			home
+			boton
+			poster="https://edteam-media.s3.amazonaws.com/blogs/original/05ebfada-ca24-4d09-94e2-8a77aa63ee13.jpg"
 		/>
 		<main className="ed-grid m-grid-2">
 			<div className="l-block s-center">
